@@ -1,0 +1,20 @@
+
+
+
+    <input type="file" id="file-chooser"  />
+    <input type="file"  ng-model="objectToUpload" />
+    <br>
+    <button id="upload-button" type="button" class="btn btn-default" ng-click="uploadObject()">Upload to S3</button>
+    <button id="upload-button" type="button" class="btn btn-default" ng-click="listObjects()">Listar Objetos</button>
+
+    <div id="results"></div>
+
+    <div id="fb-root"></div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <ul>
+          <li ng-repeat="imagen in imagenes">{{imagen.name}}</li>
+        </ul>
+      </div>
+    </div>
